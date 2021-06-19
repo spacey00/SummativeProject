@@ -1,0 +1,92 @@
+https://csscr.herokuapp.com/login
+
+insert into roles (name) values ('Administrator');
+insert into roles (name) values ('Manager');
+insert into roles (name) values ('Staff');
+commit;
+
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','david@gmail.com','David Tan',true,'CEO','98566766','david');
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','mary@outlook.com','Mary Ho',true,'Manager','99723232','mary');
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','John@outlook.com','John
+Lee' ,true,'CounterStaff','89233211','john');
+commit;
+
+insert into user_roles (user_id, role_id) values (1,1);
+insert into user_roles (user_id, role_id) values (2,2);
+insert into user_roles (user_id, role_id) values (3,3);
+commit;
+
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Honda','https://imgur.com/wiRGL8D.jpg','SMV5065K','City',65,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Mazda','https://imgur.com/NJtco1I.jpg','SMA3111J','Mazda 3',65,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Nissan','https://imgur.com/D0ENfIi.jpg','SLJ547U','Pulsar',70,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/f27PUhH.jpg','SKS4535S','Auris',60,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/dkLDvvj.jpg','SLV1387U','Vios',60,'free',null,'manual');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/sbiZfJb.jpg','SGT2883S','Vios',60,'free',null,'automatic');
+commit;
+
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/WbMsY2G.jpg','Blk 2, Ang Mo Kio Ave 5, #09-119','92323333','Singapore','tls@outlook.com','Tan Lee Teng','236279','92367919','http:/www.tanls.com',null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/352MFTt.jpg','Blk 80, Bayshore Road','82326567','Singapore','henryj@gmail.com','Susan Johnson','723211','92323211',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/FzdnJAe.jpg','Blk 80, India Road','86456123','India','simon@gmail.com','Simon','888888','98888888',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/52qqc8J.jpg','Blk 2443 Ubi Ave 4, #01-78',null,'Singapore','sunni@outlook.com','Ahmad Sunni','843222','87423212','http://www.ibm.com/sunni',null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/oA9Gt5k.jpg','Blk 100, Aljunied Crescent, #10-900','97232222','Singapore','Wee@gmail.com','Wee You Ming','971222','82321644',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/v6ACaYG.jpg','Blk 277 Loyang Ave 1, #09-888','89232111','Singapore','leesc@hotmail.com','Lee Seok Chu','8233111','92732332',null,null,null);
+commit;
+
+
+USERS (Oracle)
+insert into roles (name) values ('Administrator');
+insert into roles (name) values ('Manager');
+insert into roles (name) values ('Staff');
+commit;
+
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','david@gmail.com','David Tan',1,'CEO','98566766','david');
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','mary@outlook.com','Mary Ho',1,'Manager','99723232','mary');
+Insert into USERS (PASSWORD,USER_EMAIL,USER_EMP_NAME,IS_ENABLED,USER_JOB_TITLE,USER_PHONE,USERNAME) values ('$2y$12$ANT3M1ucdnwLkLQCAfoqCuUYlcC.RB0wz1OewrV0j5bYyUwYQuY/i','John@outlook.com','John Lee',1,'CounterStaff','89233211','john');
+commit;
+
+insert into user_roles (user_id, role_id) values (1,1);
+insert into user_roles (user_id, role_id) values (2,2);
+insert into user_roles (user_id, role_id) values (3,3);
+commit;
+
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Honda','https://imgur.com/wiRGL8D.jpg','SMV5065K','City',65,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Mazda','https://imgur.com/NJtco1I.jpg','SMA3111J','Mazda 3',65,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Nissan','https://imgur.com/D0ENfIi.jpg','SLJ547U','Pulsar',70,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/f27PUhH.jpg','SKS4535S','Auris',60,'free',null,'automatic');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/dkLDvvj.jpg','SLV1387U','Vios',60,'free',null,'manual');
+Insert into VEHICLE (VEH_BRAND,VEH_CAR_PHOTO,VEH_LICPLATE,VEH_MODEL,VEH_RENT_RATE,VEH_STATUS,CURHIREID,VEH_TRANSMISSION) values ('Toyota','https://imgur.com/sbiZfJb.jpg','SGT2883S','Vios',60,'free',null,'automatic');
+commit;
+
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/WbMsY2G.jpg','Blk 2, Ang Mo Kio Ave 5, #09-119','92323333','Singapore','tls@outlook.com','Tan Lee Teng','236279','92367919','http:/www.tanls.com',null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/352MFTt.jpg','Blk 80, Bayshore Road','82326567','Singapore','henryj@gmail.com','Susan Johnson','723211','92323211',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/FzdnJAe.jpg','Blk 80, India Road','86456123','India','simon@gmail.com','Simon','888888','98888888',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/52qqc8J.jpg','Blk 2443 Ubi Ave 4, #01-78',null,'Singapore','sunni@outlook.com','Ahmad Sunni','843222','87423212','http://www.ibm.com/sunni',null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/oA9Gt5k.jpg','Blk 100, Aljunied Crescent, #10-900','97232222','Singapore','Wee@gmail.com','Wee You Ming','971222','82321644',null,null,null);
+Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/v6ACaYG.jpg','Blk 277 Loyang Ave 1, #09-888','89232111','Singapore','leesc@hotmail.com','Lee Seok Chu','8233111','92732332',null,null,null);
+commit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+spring.security.oauth2.client.registration.google.client-id=364420760219-u20jdscpfd6p5cu9hcmbhpmmfit44fah.apps.googleusercontent.com
+spring.security.oauth2.client.registration.google.client-secret=4rC6TPrHk-4hN5CuQ7TSiZiU
+
+
+spring.security.oauth2.client.registration.github.client-id=dd10a05ec73a9f0d45d6
+spring.security.oauth2.client.registration.github.client-secret=e412170afd532a0b83e82a00b15979d145a942f5
