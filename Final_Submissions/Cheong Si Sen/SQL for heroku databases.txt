@@ -65,28 +65,3 @@ Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CU
 Insert into CUSTOMER (CUST_LICENSEURL,CUST_ADDRESS,CUST_ALT_CONTACT,CUST_CITY,CUST_EMAIL,CUST_NAME,CUST_POSTAL,CUST_TEL,CUST_WEBSITE,CURRHIREID,VEHICLEID) values ('https://imgur.com/v6ACaYG.jpg','Blk 277 Loyang Ave 1, #09-888','89232111','Singapore','leesc@hotmail.com','Lee Seok Chu','8233111','92732332',null,null,null);
 commit;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-spring.security.oauth2.client.registration.google.client-id=364420760219-u20jdscpfd6p5cu9hcmbhpmmfit44fah.apps.googleusercontent.com
-spring.security.oauth2.client.registration.google.client-secret=4rC6TPrHk-4hN5CuQ7TSiZiU
-
-
-spring.security.oauth2.client.registration.github.client-id=dd10a05ec73a9f0d45d6
-spring.security.oauth2.client.registration.github.client-secret=e412170afd532a0b83e82a00b15979d145a942f5
