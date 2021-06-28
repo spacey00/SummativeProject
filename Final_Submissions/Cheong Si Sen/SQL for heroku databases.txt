@@ -1,4 +1,4 @@
-https://csscr.herokuapp.com/login
+Postgres
 
 insert into roles (name) values ('Administrator');
 insert into roles (name) values ('Manager');
