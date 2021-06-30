@@ -18,3 +18,5 @@ Note:
 3.	Users (User role) can only add records for customer and hire data and see the list of customers and hires.
 4.	Managers (Manager role) are given the rights to edit /delete the data across all the modules barring the User information. 
 5.    All images ==> Driver Licence, Photo of cars are stored using image hosting website www.IMGUR.com
+
+6.    For Display Board function, Press F11 key for full screen display
